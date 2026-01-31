@@ -1,0 +1,30 @@
+@import "tailwindcss";
+
+@theme {
+  /* High-end Medical Theme Tokens */
+  --color-brand: #2563eb;
+  --color-brand-light: #eff6ff;
+  --color-medical-green: #16a34a;
+  --color-audit-red: #dc2626;
+  
+  --radius-3xl: 1.5rem;
+  --radius-2xl: 1rem;
+}
+
+/* Global Reset: Removing the default Vite centering that breaks layouts */
+:root {
+  font-family: 'Inter', system-ui, -apple-system, sans-serif;
+  background-color: #f8fafc; /* Slate-50 */
+  color: #0f172a; /* Slate-900 */
+}
+
+body {
+  margin: 0;
+  min-width: 100%;
+  min-height: 100vh;
+  display: block; /* Overriding Vite's 'flex place-items: center' */
+}
+
+html {
+  scroll-behavior: smooth;
+}
